@@ -3,42 +3,38 @@ import apps from '../image/app.png'
 import images from '../image/Screenshot 2024-01-22 173940.png'
 import ssss from '../image/ssss.png'
 import ffff from '../image/legal-image.svg'
-import handyman from '../image/Handyman_700х320.png'
 import vanue from '../image/Venue-700x320-1.png'
 import freelance from '../image/Freelance-700x320-1.png'
-import tool from '../image/00bafbd467d3032080ea94def9f43a1a.jpg'
-import machine from '../image/color-matching-toolbox-tools-clip-art-portable-colorblock_230996_wh1200.png'
-import maaaa from '../image/images.png'
-import promise from '../image/Promise_1920х420-700x320.png'
-import rental from '../image/Rental-700x320-1.png'
-import purchase from '../image/Purchase-and-Sale-700x320-1.png'
-import date from '../image/Date-700x320-1.png'
-import uncouple from '../image/Uncouple-700x320-1.png'
-import prenup from '../image/Prenup-700x320-1.png'
 import imagess from '../image/imagess.png'
-import meanwhile from '../image/1086х496-5-1080x494.png'
-import online from '../image/Обложка-1920х420-2-700x320.png'
-import freelances from '../image/ggg.png'
-import wish from '../image/Promise_1920х420-700x320.png'
-import prenups from '../image/aa.png'
 import fffffff from '../image/ffffff.png'
 import pppp from '../image/pppp.png'
-import { Button, Rating } from '@mui/material'
+import { Rating } from '@mui/material'
+import { Link } from 'react-router-dom'
 
 const MainHead = () => {
     return (
         <>
-            <div className='mx-64 mt-2'>
-                <p className='text-7xl text-green-600 font-serif cursor-pointer'>e.gree</p>
+            <div className='mx-28 mt-2'>
+                <p className='text-6xl font-extrabold text-emerald-500 font-serif cursor-pointer'>e.gree</p>
                 <p className='flex list-none gap-7 text-l capitalize mt-2 cursor-pointer'>
-                    <li className='hover:text-green-400'>contacts</li>
-                    <li className='hover:text-green-400'>FAQ</li>
-                    <li className='hover:text-green-400'>team</li>
-                    <li className='hover:text-green-400'>contact us</li>
-                    <li className='hover:text-green-400'>blog</li>
+                    <Link to='/contracts' className={window.location.pathname === '/contracts' ? "!underline" : ""}>
+                        <li className='hover:text-green-400'>contacts</li>
+                    </Link>
+                    <Link to='/faq' className={window.location.pathname === '/faq' ? "!underline" : ""}>
+                        <li className='hover:text-green-400'>FAQ</li>
+                    </Link>
+                    <Link to='/team' className={window.location.pathname === '/team' ? "!underline" : ""}>
+                        <li className='hover:text-green-400'>team</li>
+                    </Link>
+                    <Link to='/contact_us' className={window.location.pathname === '/contact_us' ? "!underline" : ""}>
+                        <li className='hover:text-green-400'>contact us</li>
+                    </Link>
+                    <Link to='/blog' className={window.location.pathname === '/blog' ? "!underline" : ""}>
+                        <li className='hover:text-green-400'>blog</li>
+                    </Link>
                 </p>
             </div>
-            <div className='flex justify-center items-center gap-20 mt-8 bg-emerald-400 h-[34rem]'>
+            <div className='flex justify-center items-center gap-20 mt-8 h-[34rem]' style={{ backgroundImage: `url('https://wallpapercave.com/wp/wp2987144.jpg')` }}>
                 <div>
                     <p className='h-1 w-[30rem] font-serif text-4xl capitalize text-white font-bold  mr-28 italic'>helping you through all of life's agreements <span className='flex flex-col text-green-200'>and disagreements</span></p>
                     <img src={apps} alt="" className='rounded-md mt-32 h-12' />
@@ -61,13 +57,13 @@ const MainHead = () => {
             <p className='font-serif text-center mt-14 font-bold text-4xl'>Contracts for all kinds <span className='flex flex-col'>of life situations</span></p>
 
 
-            <p className='ml-28 text-2xl font-bold font-serif mt-5'>All you need is business</p>
-            <div className='flex justify-center gap-10 items-center mt-5'>
-                <div className='border h-auto rounded-md w-96'>
-                    <img src={handyman} alt="" className='h-40 w-96 rounded-md' />
+            <p className='ml-44 text-2xl font-bold font-serif mt-5'>All you need is business</p>
+            <div className='flex justify-center gap-20 items-center mt-5'>
+                <div className='border h-auto rounded-md w-80'>
+                    <img src={'https://e-gree.app/wp-content/uploads/2021/12/Handyman_1920%D1%85420-1536x336.png'} alt="" className='h-40 w-80 rounded-md' />
                     <footer className='flex items-center pl-5'>
-                        <img src={tool} alt="" className='h-8' />
-                        <p className='capitalize text-xl font-bold font-serif'>handyman</p>
+                        <img src={'https://e-gree.app/wp-content/uploads/2021/12/Handyman-150x150.png'} alt="" className='h-8' />
+                        <p className='capitalize text-xl font-bold font-serif cursor-pointer hover:text-emerald-400'>handyman</p>
                     </footer>
                     <p className='pl-5 capitalize'>for household projects large and small</p>
                     <footer className='flex gap-10 mt-[4.7rem] pl-5'>
@@ -76,11 +72,11 @@ const MainHead = () => {
                     </footer>
                 </div>
 
-                <div className='border h-auto rounded-md w-96'>
-                    <img src={vanue} alt="" className='h-40 w-96 rounded-md' />
+                <div className='border h-auto rounded-md w-80'>
+                    <img src={vanue} alt="" className='h-40 w-80 rounded-md' />
                     <footer className='flex items-center pl-5'>
-                        <img src={machine} alt="" className='h-8' />
-                        <p className='capitalize text-xl font-bold font-serif'>venue</p>
+                        <img src={'https://e-gree.app/wp-content/themes/eGree/images/icon-venue.svg'} alt="" className='h-8' />
+                        <p className='capitalize text-xl font-bold font-serif cursor-pointer hover:text-emerald-400'>venue</p>
                     </footer>
                     <p className='pl-5 capitalize'>estable and customize entry requirements for your event</p>
                     <footer className='flex gap-10 mt-12 pl-5'>
@@ -89,11 +85,11 @@ const MainHead = () => {
                     </footer>
                 </div>
 
-                <div className='border h-auto rounded-md w-96'>
-                    <img src={freelance} alt="" className='h-40 w-96 rounded-md' />
+                <div className='border h-[19.5rem] rounded-md w-80'>
+                    <img src={freelance} alt="" className='h-40 w-80 rounded-md' />
                     <footer className='flex items-center pl-5'>
-                        <img src={maaaa} alt="" className='h-8' />
-                        <p className='capitalize text-xl font-bold font-serif'>freelance</p>
+                        <img src={'https://e-gree.app/wp-content/themes/eGree/images/icon-freelance.svg'} alt="" className='h-8' />
+                        <p className='capitalize text-xl font-bold font-serif cursor-pointer hover:text-emerald-400'>freelance</p>
                     </footer>
                     <p className='pl-5 capitalize'>giving your side hustle some get up and go.</p>
                     <footer className='flex gap-10 mt-12 pl-5 '>
@@ -104,15 +100,15 @@ const MainHead = () => {
 
             </div>
 
-            <p className='ml-28 text-2xl font-bold font-serif mt-5'>All you need is family and friends</p>
+            <p className='ml-44 text-2xl font-bold font-serif mt-5'>All you need is family and friends</p>
 
 
-            <div className='flex justify-center gap-10 items-center mt-5'>
-                <div className='border h-auto rounded-md w-96'>
-                    <img src={promise} alt="" className='h-40 w-96 rounded-md' />
+            <div className='flex justify-center gap-20 items-center mt-5'>
+                <div className='border h-auto rounded-md w-80'>
+                    <img src={'https://e-gree.app/wp-content/uploads/2021/12/1920%D1%85420-4-1536x336.png'} alt="" className='h-40 w-80 rounded-md' />
                     <footer className='flex items-center pl-5'>
-                        {/* <img src={promise} alt="" className='h-4' /> */}
-                        <p className='capitalize text-xl font-bold font-serif'>promise</p>
+                        <img src={'https://e-gree.app/wp-content/uploads/2021/12/Icon_Promise.svg'} alt="" className='h-8' />
+                        <p className='capitalize text-xl font-bold font-serif cursor-pointer hover:text-emerald-400'>promise</p>
                     </footer>
                     <p className='pl-5 capitalize'>an official to mysell with a signature</p>
                     <footer className='flex gap-10 mt-12 pl-5'>
@@ -121,11 +117,11 @@ const MainHead = () => {
                     </footer>
                 </div>
 
-                <div className='border h-auto rounded-md w-96'>
-                    <img src={rental} alt="" className='h-40 w-96 rounded-md' />
+                <div className='border h-auto rounded-md w-80'>
+                    <img src={'https://e-gree.app/wp-content/uploads/2021/10/Rental-700x320-1.png'} alt="" className='h-40 w-80 rounded-md' />
                     <footer className='flex items-center pl-5'>
-                        {/* <img src={rental} alt="" className='h-4' /> */}
-                        <p className='capitalize text-xl font-bold font-serif'>rental</p>
+                        <img src={'https://e-gree.app/wp-content/uploads/2021/10/icon-rental.svg'} alt="" className='h-8' />
+                        <p className='capitalize text-xl font-bold font-serif cursor-pointer hover:text-emerald-400'>rental</p>
                     </footer>
                     <p className='pl-5 capitalize'>success is not owned. it's rented</p>
                     <footer className='flex gap-10 mt-12 pl-5'>
@@ -134,11 +130,11 @@ const MainHead = () => {
                     </footer>
                 </div>
 
-                <div className='border h-auto rounded-md w-96'>
-                    <img src={purchase} alt="" className='h-40 w-96 rounded-md' />
+                <div className='border h-72 rounded-md w-80'>
+                    <img src={'https://e-gree.app/wp-content/uploads/2021/10/Purchase-and-Sale-1920x420-1-1536x337.png'} alt="" className='h-40 w-80 rounded-md' />
                     <footer className='flex items-center pl-5'>
-                        {/* <img src={purchase} alt="" className='h-4' /> */}
-                        <p className='capitalize text-xl font-bold font-serif'>purchase and sale</p>
+                        <img src={'https://e-gree.app/wp-content/themes/eGree/images/icon-purchase_and_sale.svg'} alt="" className='h-8' />
+                        <p className='capitalize text-xl font-bold font-serif cursor-pointer hover:text-emerald-400'>purchase and sale</p>
                     </footer>
                     <p className='pl-5 capitalize'>the easy way to buy and sell with peace of mind.</p>
                     <footer className='flex gap-10 mt-12 pl-5 '>
@@ -149,15 +145,15 @@ const MainHead = () => {
 
             </div>
 
-            <p className='ml-28 text-2xl font-bold font-serif mt-5'>All you need is relations</p>
+            <p className='ml-44 text-2xl font-bold font-serif mt-5'>All you need is relations</p>
 
 
-            <div className='flex justify-center gap-10 items-center mt-5'>
-                <div className='border h-auto rounded-md w-96'>
-                    <img src={date} alt="" className='h-40 w-96 rounded-md' />
+            <div className='flex justify-center gap-20 items-center mt-5'>
+                <div className='border h-auto rounded-md w-80'>
+                    <img src={'https://e-gree.app/wp-content/uploads/2021/10/Date-1920x420-1-1536x337.png'} alt="" className='h-40 w-80 rounded-md' />
                     <footer className='flex items-center pl-5'>
-                        {/* <img src={date} alt="" className='h-4' /> */}
-                        <p className='capitalize text-xl font-bold font-serif'>date</p>
+                        <img src={'https://e-gree.app/wp-content/themes/eGree/images/icon-date.svg'} alt="" className='h-4' />
+                        <p className='capitalize text-xl font-bold font-serif cursor-pointer hover:text-emerald-400'>date</p>
                     </footer>
                     <p className='pl-5 capitalize'>ensure your privacy during(or after) the course of a relationship</p>
                     <footer className='flex gap-10 mt-12 pl-5'>
@@ -166,11 +162,11 @@ const MainHead = () => {
                     </footer>
                 </div>
 
-                <div className='border h-auto rounded-md w-96'>
-                    <img src={uncouple} alt="" className='h-40 w-96 rounded-md' />
+                <div className='border h-auto rounded-md w-80'>
+                    <img src={'https://e-gree.app/wp-content/uploads/2021/10/Uncouple-1920x420-1-1536x337.png'} alt="" className='h-40 w-80 rounded-md' />
                     <footer className='flex items-center pl-5'>
-                        {/* <img src={uncouple} alt="" className='h-4' /> */}
-                        <p className='capitalize text-xl font-bold font-serif'>uncouple</p>
+                        <img src={'https://e-gree.app/wp-content/themes/eGree/images/icon-uncouple.svg'} alt="" className='h-4' />
+                        <p className='capitalize text-xl font-bold font-serif cursor-pointer hover:text-emerald-400'>uncouple</p>
                     </footer>
                     <p className='pl-5 capitalize'>for couples who wish to set some ground rules for their separation.</p>
                     <footer className='flex gap-10 mt-12 pl-5'>
@@ -179,11 +175,11 @@ const MainHead = () => {
                     </footer>
                 </div>
 
-                <div className='border h-auto rounded-md w-96'>
-                    <img src={prenup} alt="" className='h-40 w-96 rounded-md' />
+                <div className='border h-auto rounded-md w-80'>
+                    <img src={'https://e-gree.app/wp-content/uploads/2021/10/Prenup-1920x420-1-1536x337.png'} alt="" className='h-40 w-80 rounded-md' />
                     <footer className='flex items-center pl-5'>
-                        {/* <img src={prenup} alt="" className='h-4' /> */}
-                        <p className='capitalize text-xl font-bold font-serif'>prenup</p>
+                        <img src={'https://e-gree.app/wp-content/themes/eGree/images/icon-prenup.svg'} alt="" className='h-4' />
+                        <p className='capitalize text-xl font-bold font-serif cursor-pointer hover:text-emerald-400'>prenup</p>
                     </footer>
                     <p className='pl-5 capitalize'>for future financial and personal assurances before marriage.</p>
                     <footer className='flex gap-10 mt-12 pl-5 '>
@@ -195,9 +191,9 @@ const MainHead = () => {
             </div>
 
 
-            <p className='ml-28 text-2xl font-bold font-serif mt-5'>All you need is life</p>
+            <p className='ml-44 text-2xl font-bold font-serif mt-5'>All you need is life</p>
 
-            <div className='flex ml-32 gap-[30rem] items-center'>
+            <div className='flex ml-44 gap-[30rem] items-center'>
                 <div className='flex flex-col gap-6'>
                     <footer className='flex gap-10 text-xl font-bold'>
                         <p>Allowance</p>
@@ -223,9 +219,9 @@ const MainHead = () => {
                 <p className='capitalize text-green-500 font-bold'>view all 25 contracts</p>
             </div>
             <div className='flex flex-col justify-center items-center mt-16 bg-sky-800 h-80'>
-                <p className='font-bold text-3xl capitalize text-white'>sign an agreement</p>
-                <p className='font-bold text-3xl text-white'>in e-gree-save tree!</p>
-                <p className='w-[25rem] text-white'>at e-gree we're doing our part by bringing legal services to the digital world. with our contract trmplates, we're saving time and money. and trees, of course</p>
+                <p className='font-bold text-4xl capitalize text-white font-serif'>sign an agreement</p>
+                <p className='font-bold text-4xl text-white font-serif'>in e-gree-save tree!</p>
+                <p className='w-[25rem] text-white mt-5'>At e-gree we're doing our part by bringing legal services to the digital world. with our contract trmplates, we're saving time and money. and trees, of course</p>
                 <button className='items-center border bg-emerald-600 h-12 mt-5 rounded-lg hover:bg-emerald-500 text-white text-xl w-52'>Sign now</button>
             </div>
 
@@ -233,7 +229,7 @@ const MainHead = () => {
             <p className='ml-20 font-serif'>Our blog explains you how to use our app in all kinds of life situations.</p>
             <div className='flex justify-center items-center gap-10'>
                 <div className='bg-red-50 rounded-md'>
-                    <img src={meanwhile} alt="" className='h-96 w-[35rem] rounded-md' />
+                    <img src={'https://e-gree.app/wp-content/uploads/2022/01/1086%D1%85496-5-1080x494.png'} alt="" className='h-96 w-[35rem] rounded-md' />
                     <p className='font-bold font-serif text-2xl pl-5'>Who do you need a handyman contract</p>
                     <p className='w-96 pl-5'>There is a need of having an agreement abvout thr works that will be provided and the payment that will be received.</p>
                     <div className='flex justify-between mt-10 pl-5 pr-5'>
@@ -244,7 +240,7 @@ const MainHead = () => {
                 <div className='flex flex-col gap-5'>
                     <div className='flex gap-5'>
                         <footer className='border rounded-md h-[16.4rem]'>
-                            <img src={online} alt="" className='h-40 w-full rounded-md' />
+                            <img src={'https://e-gree.app/wp-content/uploads/2022/02/%D0%9E%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0-1920%D1%85420-2-700x320.png'} alt="" className='h-40 w-full rounded-md' />
                             <p className='font-bold text-xl p-4'>How to sell your used things online</p>
                             <div className='flex justify-around mt-4'>
                                 <p>3 min read</p>
@@ -252,7 +248,7 @@ const MainHead = () => {
                             </div>
                         </footer>
                         <footer className='border rounded-md h-[16.4rem]'>
-                            <img src={freelances} alt="" className='h-40 w-full rounded-md' />
+                            <img src={'https://e-gree.app/wp-content/uploads/2022/02/%D0%9E%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0-1920%D1%85420-1-700x320.png'} alt="" className='h-40 w-full rounded-md' />
                             <p className='font-bold text-xl p-4'>How to sell your used things online</p>
                             <div className='flex justify-around mt-4'>
                                 <p>3 min read</p>
@@ -262,7 +258,7 @@ const MainHead = () => {
                     </div>
                     <div className='flex gap-5'>
                         <footer className='border rounded-md h-[16.4rem]'>
-                            <img src={wish} alt="" className='h-40 w-full rounded-md' />
+                            <img src={'https://e-gree.app/wp-content/uploads/2021/12/Promise_1920%D1%85420-1536x336.png'} alt="" className='h-40 w-[22.8rem] rounded-md' />
                             <p className='font-bold text-xl p-4'>How to sell your used things online</p>
                             <div className='flex justify-around mt-4'>
                                 <p>3 min read</p>
@@ -270,7 +266,7 @@ const MainHead = () => {
                             </div>
                         </footer>
                         <footer className='border h-[16.4rem] rounded-md'>
-                            <img src={prenups} alt="" className='h-40 w-full rounded-md' />
+                            <img src={'https://e-gree.app/wp-content/uploads/2021/12/1920%D1%85420-3-1080x494.png'} alt="" className='h-40 w-full rounded-md' />
                             <p className='font-bold text-xl p-4'>How to sell your used things online</p>
                             <div className='flex justify-around mt-4'>
                                 <p>3 min read</p>
@@ -321,7 +317,7 @@ const MainHead = () => {
                     <p>e-gree dolor sit amet consectetur adipisicing elit. Alias, ipsa libero corporis voluptatem qui iure eligendi cumque beatae doloremque modi dignissimos error vel quae quidem velit aut, earum natus. Consectetur minus pariatur, impedit, nihil perspiciatis commodi inventore nam veniam quaerat porro quia accusamus soluta ut ex blanditiis. Ut, qui culpa!</p>
                 </footer>
                 <footer className='h-80 bg-slate-200 w-80 rounded-lg border p-5'>
-                    <p className='text-sky-700 font-bold text-2xl italic'>MAC<span className='text-red-700'>TECH</span></p>
+                    <Rating name="half-rating-read" defaultValue={2.5} precision={5} readOnly />
                     <p>e-gree, a new app that allows anyone builde own contact with their term.</p>
                 </footer>
             </div>
@@ -339,7 +335,7 @@ const MainHead = () => {
                 </footer>
             </div>
 
-            <div className='text-center h-72 pt-28 text-white font-serif font-bold text-3xl mt-5 bg-emerald-500'>
+            <div className='text-center h-72 pt-28 text-white font-serif font-bold text-3xl mt-5 ' style={{ backgroundImage: `url('https://wallpapercave.com/wp/wp2987144.jpg')` }}>
                 <p>Let's agree</p>
                 <p>to e-gree</p>
             </div>
