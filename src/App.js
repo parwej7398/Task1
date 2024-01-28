@@ -10,7 +10,7 @@ import ContactUs from './MainHead/ContactUs';
 import Handyman from './MainHead/pages/Handyman';
 import Venue from './MainHead/pages/venue';
 import Freelance from './MainHead/pages/Freelance';
-import Promise from './MainHead/pages/Promise';
+import Sign from './MainHead/pages/Sign';
 
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
           <Route path='/handyman' element={<Handyman />} />
           <Route path='/venue' element={<Venue />} />
           <Route path='/freelance' element={<Freelance />} />
-          <Route path='/promise' element={<Promise />} />
+          <Route path='/sign' element={<Sign />} />
         </Routes>
       </BrowserRouter>
     </>
