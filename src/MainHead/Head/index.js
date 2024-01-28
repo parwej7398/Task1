@@ -1,17 +1,40 @@
 import React from 'react'
-import apps from '../image/app.png'
-import images from '../image/Screenshot 2024-01-22 173940.png'
-import ssss from '../image/ssss.png'
-import ffff from '../image/legal-image.svg'
-import vanue from '../image/Venue-700x320-1.png'
-import freelance from '../image/Freelance-700x320-1.png'
-import imagess from '../image/imagess.png'
-import fffffff from '../image/ffffff.png'
-import pppp from '../image/pppp.png'
+import apps from '../../image/app.png'
+import images from '../../image/Screenshot 2024-01-22 173940.png'
+import ssss from '../../image/ssss.png'
+import ffff from '../../image/legal-image.svg'
+import vanue from '../../image/Venue-700x320-1.png'
+import freelance from '../../image/Freelance-700x320-1.png'
+import imagess from '../../image/imagess.png'
+import fffffff from '../../image/ffffff.png'
+import pppp from '../../image/pppp.png'
 import { Rating } from '@mui/material'
 import { Link } from 'react-router-dom'
+import handyman from '../../image/Handyman_700х320.png'
+import promise from '../../image/Promise_1920х420-700x320.png'
+import date from '../../image/Date-700x320-1.png'
+import rental from '../../image/Date-700x320-1.png'
+import purchase from '../../image/Purchase-and-Sale-700x320-1.png'
+import uncouple from '../../image/Uncouple-700x320-1.png'
+import prenup from '../../image/Prenup-700x320-1.png'
+import mwanwhile from '../../image/1086х496-5-1080x494.png'
+import onlineshoping from '../../image/Обложка-1920х420-2-700x320.png'
+import womanlaptop from '../../image/ggg.png'
+import lighting from '../../image/700-х-320-4-768x352.png'
+import usdess from '../../image/aa.png'
+import Allowance from '../.././assest/Allowance.png'
+import Consent from '../../assest/Consent.png'
+import events from '../../assest/Event.png'
+import Idea from '../../assest/Idea.png'
+import Prenup from '../../assest/Prenup.png'
+import Purchase from '../../assest/Purchase.png'
+import Refer from '../../assest/Refer.png'
+import Secret from '../../assest/Secret.png'
+import Sexting from '../../assest/Sexting.png'
 
-const MainHead = () => {
+
+
+const Head = () => {
     return (
         <>
             <div className='mx-28 mt-2'>
@@ -34,6 +57,8 @@ const MainHead = () => {
                     </Link>
                 </p>
             </div>
+
+
             <div className='flex justify-center items-center gap-20 mt-8 h-[34rem]' style={{ backgroundImage: `url('https://wallpapercave.com/wp/wp2987144.jpg')` }}>
                 <div>
                     <p className='h-1 w-[30rem] font-serif text-4xl capitalize text-white font-bold  mr-28 italic'>helping you through all of life's agreements <span className='flex flex-col text-green-200'>and disagreements</span></p>
@@ -58,90 +83,102 @@ const MainHead = () => {
 
 
             <p className='ml-44 text-2xl font-bold font-serif mt-5'>All you need is business</p>
+
             <div className='flex justify-center gap-20 items-center mt-5'>
-                <div className='border h-auto rounded-md w-80'>
-                    <img src={'https://e-gree.app/wp-content/uploads/2021/12/Handyman_1920%D1%85420-1536x336.png'} alt="" className='h-40 w-80 rounded-md' />
-                    <footer className='flex items-center pl-5'>
-                        <img src={'https://e-gree.app/wp-content/uploads/2021/12/Handyman-150x150.png'} alt="" className='h-8' />
-                        <p className='capitalize text-xl font-bold font-serif cursor-pointer hover:text-emerald-400'>handyman</p>
-                    </footer>
-                    <p className='pl-5 capitalize'>for household projects large and small</p>
-                    <footer className='flex gap-10 mt-[4.7rem] pl-5'>
-                        <p>2 min to create</p>
-                        <p>754 signed</p>
-                    </footer>
-                </div>
+                <Link to='/handyman'>
+                    <div className='border h-auto rounded-md w-80'>
+                        <img src={handyman} alt="" className='h-40 w-80 rounded-md' />
+                        <footer className='flex items-center pl-5'>
+                            <img src={'https://e-gree.app/wp-content/uploads/2021/12/Handyman-150x150.png'} alt="" className='h-8' />
+                            <p className='capitalize text-xl font-bold font-serif cursor-pointer hover:text-emerald-400'>handyman</p>
+                        </footer>
+                        <p className='pl-5 capitalize'>for household projects large and small</p>
+                        <footer className='flex gap-10 mt-[4.7rem] pl-5'>
+                            <p>2 min to create</p>
+                            <p>754 signed</p>
+                        </footer>
+                    </div>
+                </Link>
 
-                <div className='border h-auto rounded-md w-80'>
-                    <img src={vanue} alt="" className='h-40 w-80 rounded-md' />
-                    <footer className='flex items-center pl-5'>
-                        <img src={'https://e-gree.app/wp-content/themes/eGree/images/icon-venue.svg'} alt="" className='h-8' />
-                        <p className='capitalize text-xl font-bold font-serif cursor-pointer hover:text-emerald-400'>venue</p>
-                    </footer>
-                    <p className='pl-5 capitalize'>estable and customize entry requirements for your event</p>
-                    <footer className='flex gap-10 mt-12 pl-5'>
-                        <p>1 min to create</p>
-                        <p>2072 signed</p>
-                    </footer>
-                </div>
+                <Link to='/venue'>
+                    <div className='border h-auto rounded-md w-80'>
+                        <img src={vanue} alt="" className='h-40 w-80 rounded-md' />
+                        <footer className='flex items-center pl-5'>
+                            <img src={'https://e-gree.app/wp-content/themes/eGree/images/icon-venue.svg'} alt="" className='h-8' />
+                            <p className='capitalize text-xl font-bold font-serif cursor-pointer hover:text-emerald-400'>venue</p>
+                        </footer>
+                        <p className='pl-5 capitalize'>estable and customize entry requirements for your event</p>
+                        <footer className='flex gap-10 mt-12 pl-5'>
+                            <p>1 min to create</p>
+                            <p>2072 signed</p>
+                        </footer>
+                    </div>
+                </Link>
 
-                <div className='border h-[19.5rem] rounded-md w-80'>
-                    <img src={freelance} alt="" className='h-40 w-80 rounded-md' />
-                    <footer className='flex items-center pl-5'>
-                        <img src={'https://e-gree.app/wp-content/themes/eGree/images/icon-freelance.svg'} alt="" className='h-8' />
-                        <p className='capitalize text-xl font-bold font-serif cursor-pointer hover:text-emerald-400'>freelance</p>
-                    </footer>
-                    <p className='pl-5 capitalize'>giving your side hustle some get up and go.</p>
-                    <footer className='flex gap-10 mt-12 pl-5 '>
-                        <p>2 min to create</p>
-                        <p>2601 signed</p>
-                    </footer>
-                </div>
-
+                <Link to='/freelance'>
+                    <div className='border h-[19.5rem] rounded-md w-80'>
+                        <img src={freelance} alt="" className='h-40 w-80 rounded-md' />
+                        <footer className='flex items-center pl-5'>
+                            <img src={'https://e-gree.app/wp-content/themes/eGree/images/icon-freelance.svg'} alt="" className='h-8' />
+                            <p className='capitalize text-xl font-bold font-serif cursor-pointer hover:text-emerald-400'>freelance</p>
+                        </footer>
+                        <p className='pl-5 capitalize'>giving your side hustle some get up and go.</p>
+                        <footer className='flex gap-10 mt-12 pl-5 '>
+                            <p>2 min to create</p>
+                            <p>2601 signed</p>
+                        </footer>
+                    </div>
+                </Link>
             </div>
 
             <p className='ml-44 text-2xl font-bold font-serif mt-5'>All you need is family and friends</p>
 
 
             <div className='flex justify-center gap-20 items-center mt-5'>
-                <div className='border h-auto rounded-md w-80'>
-                    <img src={'https://e-gree.app/wp-content/uploads/2021/12/1920%D1%85420-4-1536x336.png'} alt="" className='h-40 w-80 rounded-md' />
-                    <footer className='flex items-center pl-5'>
-                        <img src={'https://e-gree.app/wp-content/uploads/2021/12/Icon_Promise.svg'} alt="" className='h-8' />
-                        <p className='capitalize text-xl font-bold font-serif cursor-pointer hover:text-emerald-400'>promise</p>
-                    </footer>
-                    <p className='pl-5 capitalize'>an official to mysell with a signature</p>
-                    <footer className='flex gap-10 mt-12 pl-5'>
-                        <p>1 min to create</p>
-                        <p>59 signed</p>
-                    </footer>
-                </div>
+                <Link to='/promise'>
+                    <div className='border h-auto rounded-md w-80'>
+                        <img src={promise} alt="" className='h-40 w-80 rounded-md' />
+                        <footer className='flex items-center pl-5'>
+                            <img src={'https://e-gree.app/wp-content/uploads/2021/12/Icon_Promise.svg'} alt="" className='h-8' />
+                            <p className='capitalize text-xl font-bold font-serif cursor-pointer hover:text-emerald-400'>Promise</p>
+                        </footer>
+                        <p className='pl-5 capitalize'>an official to mysell with a signature</p>
+                        <footer className='flex gap-10 mt-12 pl-5'>
+                            <p>1 min to create</p>
+                            <p>59 signed</p>
+                        </footer>
+                    </div>
+                </Link>
 
-                <div className='border h-auto rounded-md w-80'>
-                    <img src={'https://e-gree.app/wp-content/uploads/2021/10/Rental-700x320-1.png'} alt="" className='h-40 w-80 rounded-md' />
-                    <footer className='flex items-center pl-5'>
-                        <img src={'https://e-gree.app/wp-content/uploads/2021/10/icon-rental.svg'} alt="" className='h-8' />
-                        <p className='capitalize text-xl font-bold font-serif cursor-pointer hover:text-emerald-400'>rental</p>
-                    </footer>
-                    <p className='pl-5 capitalize'>success is not owned. it's rented</p>
-                    <footer className='flex gap-10 mt-12 pl-5'>
-                        <p>3 min to create</p>
-                        <p>2663 signed</p>
-                    </footer>
-                </div>
+                <Link>
+                    <div className='border h-auto rounded-md w-80'>
+                        <img src={rental} alt="" className='h-40 w-80 rounded-md' />
+                        <footer className='flex items-center pl-5'>
+                            <img src={'https://e-gree.app/wp-content/uploads/2021/10/icon-rental.svg'} alt="" className='h-8' />
+                            <p className='capitalize text-xl font-bold font-serif cursor-pointer hover:text-emerald-400'>rental</p>
+                        </footer>
+                        <p className='pl-5 capitalize'>success is not owned. it's rented</p>
+                        <footer className='flex gap-10 mt-12 pl-5'>
+                            <p>3 min to create</p>
+                            <p>2663 signed</p>
+                        </footer>
+                    </div>
+                </Link>
 
-                <div className='border h-72 rounded-md w-80'>
-                    <img src={'https://e-gree.app/wp-content/uploads/2021/10/Purchase-and-Sale-1920x420-1-1536x337.png'} alt="" className='h-40 w-80 rounded-md' />
-                    <footer className='flex items-center pl-5'>
-                        <img src={'https://e-gree.app/wp-content/themes/eGree/images/icon-purchase_and_sale.svg'} alt="" className='h-8' />
-                        <p className='capitalize text-xl font-bold font-serif cursor-pointer hover:text-emerald-400'>purchase and sale</p>
-                    </footer>
-                    <p className='pl-5 capitalize'>the easy way to buy and sell with peace of mind.</p>
-                    <footer className='flex gap-10 mt-12 pl-5 '>
-                        <p>3 min to create</p>
-                        <p>2066 signed</p>
-                    </footer>
-                </div>
+                <Link>
+                    <div className='border h-auto rounded-md w-80'>
+                        <img src={purchase} alt="" className='h-40 w-80 rounded-md' />
+                        <footer className='flex items-center pl-5'>
+                            <img src={'https://e-gree.app/wp-content/themes/eGree/images/icon-purchase_and_sale.svg'} alt="" className='h-8' />
+                            <p className='capitalize text-xl font-bold font-serif cursor-pointer hover:text-emerald-400'>purchase and sale</p>
+                        </footer>
+                        <p className='pl-5 capitalize'>the easy way to buy and sell with peace of mind.</p>
+                        <footer className='flex gap-10 mt-6 pl-5 '>
+                            <p>3 min to create</p>
+                            <p>2066 signed</p>
+                        </footer>
+                    </div>
+                </Link>
 
             </div>
 
@@ -149,45 +186,52 @@ const MainHead = () => {
 
 
             <div className='flex justify-center gap-20 items-center mt-5'>
-                <div className='border h-auto rounded-md w-80'>
-                    <img src={'https://e-gree.app/wp-content/uploads/2021/10/Date-1920x420-1-1536x337.png'} alt="" className='h-40 w-80 rounded-md' />
-                    <footer className='flex items-center pl-5'>
-                        <img src={'https://e-gree.app/wp-content/themes/eGree/images/icon-date.svg'} alt="" className='h-4' />
-                        <p className='capitalize text-xl font-bold font-serif cursor-pointer hover:text-emerald-400'>date</p>
-                    </footer>
-                    <p className='pl-5 capitalize'>ensure your privacy during(or after) the course of a relationship</p>
-                    <footer className='flex gap-10 mt-12 pl-5'>
-                        <p>4 min to create</p>
-                        <p>2663 signed</p>
-                    </footer>
-                </div>
+                <Link>
+                    <div className='border h-auto rounded-md w-80'>
+                        <img src={date} alt="" className='h-40 w-80 rounded-md' />
+                        <footer className='flex items-center pl-5'>
+                            <img src={'https://e-gree.app/wp-content/themes/eGree/images/icon-date.svg'} alt="" className='h-4' />
+                            <p className='capitalize text-xl font-bold font-serif cursor-pointer hover:text-emerald-400'>date</p>
+                        </footer>
+                        <p className='pl-5 capitalize'>ensure your privacy during(or after) the course of a relationship</p>
+                        <footer className='flex gap-10 mt-12 pl-5'>
+                            <p>4 min to create</p>
+                            <p>2663 signed</p>
+                        </footer>
+                    </div>
+                </Link>
 
-                <div className='border h-auto rounded-md w-80'>
-                    <img src={'https://e-gree.app/wp-content/uploads/2021/10/Uncouple-1920x420-1-1536x337.png'} alt="" className='h-40 w-80 rounded-md' />
-                    <footer className='flex items-center pl-5'>
-                        <img src={'https://e-gree.app/wp-content/themes/eGree/images/icon-uncouple.svg'} alt="" className='h-4' />
-                        <p className='capitalize text-xl font-bold font-serif cursor-pointer hover:text-emerald-400'>uncouple</p>
-                    </footer>
-                    <p className='pl-5 capitalize'>for couples who wish to set some ground rules for their separation.</p>
-                    <footer className='flex gap-10 mt-12 pl-5'>
-                        <p>7 min to create</p>
-                        <p>2400 signed</p>
-                    </footer>
-                </div>
 
-                <div className='border h-auto rounded-md w-80'>
-                    <img src={'https://e-gree.app/wp-content/uploads/2021/10/Prenup-1920x420-1-1536x337.png'} alt="" className='h-40 w-80 rounded-md' />
-                    <footer className='flex items-center pl-5'>
-                        <img src={'https://e-gree.app/wp-content/themes/eGree/images/icon-prenup.svg'} alt="" className='h-4' />
-                        <p className='capitalize text-xl font-bold font-serif cursor-pointer hover:text-emerald-400'>prenup</p>
-                    </footer>
-                    <p className='pl-5 capitalize'>for future financial and personal assurances before marriage.</p>
-                    <footer className='flex gap-10 mt-12 pl-5 '>
-                        <p>4 min to create</p>
-                        <p>123 signed</p>
-                    </footer>
-                </div>
+                <Link>
+                    <div className='border h-auto rounded-md w-80'>
+                        <img src={uncouple} alt="" className='h-40 w-80 rounded-md' />
+                        <footer className='flex items-center pl-5'>
+                            <img src={'https://e-gree.app/wp-content/themes/eGree/images/icon-uncouple.svg'} alt="" className='h-4' />
+                            <p className='capitalize text-xl font-bold font-serif cursor-pointer hover:text-emerald-400'>uncouple</p>
+                        </footer>
+                        <p className='pl-5 capitalize'>for couples who wish to set some ground rules for their separation.</p>
+                        <footer className='flex gap-10 mt-12 pl-5'>
+                            <p>7 min to create</p>
+                            <p>2400 signed</p>
+                        </footer>
+                    </div>
+                </Link>
 
+
+                <Link>
+                    <div className='border h-auto rounded-md w-80'>
+                        <img src={prenup} alt="" className='h-40 w-80 rounded-md' />
+                        <footer className='flex items-center pl-5'>
+                            <img src={'https://e-gree.app/wp-content/themes/eGree/images/icon-prenup.svg'} alt="" className='h-4' />
+                            <p className='capitalize text-xl font-bold font-serif cursor-pointer hover:text-emerald-400'>prenup</p>
+                        </footer>
+                        <p className='pl-5 capitalize'>for future financial and personal assurances before marriage.</p>
+                        <footer className='flex gap-10 mt-12 pl-5 '>
+                            <p>4 min to create</p>
+                            <p>123 signed</p>
+                        </footer>
+                    </div>
+                </Link>
             </div>
 
 
@@ -196,19 +240,46 @@ const MainHead = () => {
             <div className='flex ml-44 gap-[30rem] items-center'>
                 <div className='flex flex-col gap-6'>
                     <footer className='flex gap-10 text-xl font-bold'>
-                        <p>Allowance</p>
-                        <p>Consent</p>
-                        <p>Event</p>
-                        <p>Idea</p>
+                        <div className='flex items-center'>
+                            <img src={Allowance} alt="" />
+                            <p>Allowance</p>
+                        </div>
+                        <div className='flex items-center'>
+                            <img src={Consent} alt="" />
+                            <p>Consent</p>
+                        </div>
+                        <div className='flex items-center'>
+                            <img src={events} alt="" />
+                            <p>Event</p>
+                        </div>
+                        <div className='flex items-center'>
+                            <img src={Idea} alt="" />
+                            <p>Idea</p>
+                        </div>
                     </footer>
                     <footer className='flex gap-10 text-xl font-bold'>
-                        <p>Prenup</p>
-                        <p>Purchase and Sale</p>
-                        <p>Refer</p>
+                        <div className='flex items-center'>
+                            <img src={Prenup} alt="" />
+                            <p>Prenup</p>
+                        </div>
+                        <div className='flex items-center'>
+                            <img src={Purchase} alt="" />
+                            <p>Purchase and Sale</p>
+                        </div>
+                        <div className='flex items-center'>
+                            <img src={Refer} alt="" />
+                            <p>Refer</p>
+                        </div>
                     </footer>
                     <footer className='flex gap-10 text-xl font-bold'>
-                        <p>Secret</p>
-                        <p>Sexting</p>
+                        <div className='flex items-center'>
+                            <img src={Secret} alt="" />
+                            <p>Secret</p>
+                        </div>
+                        <div className='flex items-center'>
+                            <img src={Sexting} alt="" />
+                            <p>Sexting</p>
+                        </div>
                     </footer>
                 </div>
                 <div><img src={imagess} alt="" className='h-60 w-[20rem]' /></div>
@@ -229,7 +300,7 @@ const MainHead = () => {
             <p className='ml-20 font-serif'>Our blog explains you how to use our app in all kinds of life situations.</p>
             <div className='flex justify-center items-center gap-10'>
                 <div className='bg-red-50 rounded-md'>
-                    <img src={'https://e-gree.app/wp-content/uploads/2022/01/1086%D1%85496-5-1080x494.png'} alt="" className='h-96 w-[35rem] rounded-md' />
+                    <img src={mwanwhile} alt="" className='h-96 w-[35rem] rounded-md' />
                     <p className='font-bold font-serif text-2xl pl-5'>Who do you need a handyman contract</p>
                     <p className='w-96 pl-5'>There is a need of having an agreement abvout thr works that will be provided and the payment that will be received.</p>
                     <div className='flex justify-between mt-10 pl-5 pr-5'>
@@ -240,7 +311,7 @@ const MainHead = () => {
                 <div className='flex flex-col gap-5'>
                     <div className='flex gap-5'>
                         <footer className='border rounded-md h-[16.4rem]'>
-                            <img src={'https://e-gree.app/wp-content/uploads/2022/02/%D0%9E%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0-1920%D1%85420-2-700x320.png'} alt="" className='h-40 w-full rounded-md' />
+                            <img src={onlineshoping} alt="" className='h-40 w-full rounded-md' />
                             <p className='font-bold text-xl p-4'>How to sell your used things online</p>
                             <div className='flex justify-around mt-4'>
                                 <p>3 min read</p>
@@ -248,7 +319,7 @@ const MainHead = () => {
                             </div>
                         </footer>
                         <footer className='border rounded-md h-[16.4rem]'>
-                            <img src={'https://e-gree.app/wp-content/uploads/2022/02/%D0%9E%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0-1920%D1%85420-1-700x320.png'} alt="" className='h-40 w-full rounded-md' />
+                            <img src={womanlaptop} alt="" className='h-40 w-full rounded-md' />
                             <p className='font-bold text-xl p-4'>How to sell your used things online</p>
                             <div className='flex justify-around mt-4'>
                                 <p>3 min read</p>
@@ -258,7 +329,7 @@ const MainHead = () => {
                     </div>
                     <div className='flex gap-5'>
                         <footer className='border rounded-md h-[16.4rem]'>
-                            <img src={'https://e-gree.app/wp-content/uploads/2021/12/Promise_1920%D1%85420-1536x336.png'} alt="" className='h-40 w-[22.8rem] rounded-md' />
+                            <img src={lighting} alt="" className='h-40 w-[22.8rem] rounded-md' />
                             <p className='font-bold text-xl p-4'>How to sell your used things online</p>
                             <div className='flex justify-around mt-4'>
                                 <p>3 min read</p>
@@ -266,7 +337,7 @@ const MainHead = () => {
                             </div>
                         </footer>
                         <footer className='border h-[16.4rem] rounded-md'>
-                            <img src={'https://e-gree.app/wp-content/uploads/2021/12/1920%D1%85420-3-1080x494.png'} alt="" className='h-40 w-full rounded-md' />
+                            <img src={usdess} alt="" className='h-40 w-full rounded-md' />
                             <p className='font-bold text-xl p-4'>How to sell your used things online</p>
                             <div className='flex justify-around mt-4'>
                                 <p>3 min read</p>
@@ -340,7 +411,7 @@ const MainHead = () => {
                 <p>to e-gree</p>
             </div>
 
-            <div className='flex justify-evenly items-center'>
+            <div className='flex h-[25rem] justify-evenly items-center bg-slate-100'>
                 <footer>
                     <p>Terms and Conditions</p>
                     <p>Our Team</p>
@@ -357,7 +428,7 @@ const MainHead = () => {
                         <img src={'https://img.freepik.com/premium-vector/square-linkedin-logo-isolated-white-background_469489-892.jpg?size=338&ext=jpg&ga=GA1.1.632798143.1705536000&semt=ais'} alt="" className='h-10' />
                     </footer>
                     <footer>
-                        <img src={pppp} alt="" className='h-40' />
+                        <img src={pppp} alt="" className='h-48' />
                     </footer>
                 </div>
                 <footer>
@@ -369,4 +440,4 @@ const MainHead = () => {
     )
 }
 
-export default MainHead
+export default Head

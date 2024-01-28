@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import contact from '../../image/contactus.png'
-import fffffff from '../../image/ffffff.png'
-import apps from '../../image/app.png'
-import pppp from '../../image/pppp.png'
+import handyman from '../../../image/Handyman_700х320.png'
+import pppp from '../../../image/pppp.png'
+import apps from '../../../image/app.png'
+import fffffff from '../../../image/ffffff.png'
 
-const ContactUs = () => {
+const Handyman = () => {
     return (
-        <>
+        <div>
             <div className='mx-28 mt-2'>
                 <p className='text-6xl font-extrabold text-emerald-500 font-serif cursor-pointer'>e.gree</p>
                 <p className='flex list-none gap-7 text-l capitalize mt-2 cursor-pointer'>
@@ -28,17 +28,22 @@ const ContactUs = () => {
                     </Link>
                 </p>
             </div>
-
-            <div className='flex justify-center gap-44 mt-20'>
-                <div className='flex flex-col gap-5 cursor-pointer'>
-                    <p className='text-4xl font-bold font-serif'>Let’s get in touch!</p>
-                    <p className=''>If you have any questions, suggestions, or feedback about e-gree, please feel free to contact us.</p>
-                    <p className=''>By email: parwejalam394@gmail.com</p>
+            <div>
+                <img src={handyman} alt="" className='w-full h-[30rem] mt-5' />
+            </div>
+            <div className='flex gap-10 mt-5'>
+                <div className='w-[50%] ml-24'>
+                    <p className='text-7xl font-bold font-serif'> Handyman</p>
+                    <p className='text-xl pt-4'>Maintaining your home or apartment seems like a never-ending task. There are any number of systems- plumbing, electrical, paint, landscaping, HVAC – that from time to time require the skills of a craftsman, contractor, or specialist to fix or to otherwise keep in ship-shape. When you hire such a person, you will often trust the online reviews, the recommendations of friends and your instincts to ensure the right person for the job. And now you can trust e-gree and this household services e-greement to ensure your legal rights are protected and that all parties are on the same page regarding the work to be done and the price to be paid. So, for those jobs where you have selected a contractor, handyman, or laborer-or if you are such a specialist- this is the e-greement to use. </p>
                 </div>
-                <div>
-                    <img src={contact} alt="" className='h-80 mr-20' />
+                <div className='w-[50%] mt-5 pl-10 text-center items-center justify-center'>
+                    <img src={'https://e-gree.app/wp-content/uploads/2021/12/Handyman-150x150.png'} alt="" className='pl-64' />
+                    <button className='border bg-blue-400 text-2xl text-white h-12 rounded-3xl w-72 mt-5'>Create contact</button>
+                    <header className='flex flex-col mt-5'>
+                        <span>754 handyman contracts</span>
+                        <span>have already signed</span>
+                    </header>
                 </div>
-
             </div>
 
             <div className='flex justify-evenly items-center mt-10'>
@@ -74,15 +79,16 @@ const ContactUs = () => {
                         <img src={'https://img.freepik.com/premium-vector/square-linkedin-logo-isolated-white-background_469489-892.jpg?size=338&ext=jpg&ga=GA1.1.632798143.1705536000&semt=ais'} alt="" className='h-10' />
                     </footer>
                     <footer>
-                        <img src={pppp} alt="" className='h-44' />
+                        <img src={pppp} alt="" className='h-48' />
                     </footer>
                 </div>
                 <footer>
                     <p>© 2020–2022 e-gree</p>
                 </footer>
             </div>
-        </>
+
+        </div>
     )
 }
 
-export default ContactUs
+export default Handyman

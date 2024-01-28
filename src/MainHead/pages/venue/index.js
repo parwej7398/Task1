@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import contact from '../../image/contactus.png'
-import fffffff from '../../image/ffffff.png'
-import apps from '../../image/app.png'
-import pppp from '../../image/pppp.png'
+import pppp from '../../../image/pppp.png'
+import fffffff from '../../../image/ffffff.png'
+import apps from '../../../image/app.png'
+import venue from '../../../image/Venue-700x320-1.png'
 
-const ContactUs = () => {
+const Venue = () => {
     return (
-        <>
+        <div>
             <div className='mx-28 mt-2'>
                 <p className='text-6xl font-extrabold text-emerald-500 font-serif cursor-pointer'>e.gree</p>
                 <p className='flex list-none gap-7 text-l capitalize mt-2 cursor-pointer'>
@@ -17,10 +17,10 @@ const ContactUs = () => {
                     <Link to='/faq' className={window.location.pathname === '/faq' ? "!underline" : ""}>
                         <li className='hover:text-green-400'>FAQ</li>
                     </Link>
-                    <Link to='/team' className={window.location.pathname === '/team' ? "!underline" : ""}>
+                    <Link to='/team' className={window.location.pathname === '/faq' ? "!underline" : ""}>
                         <li className='hover:text-green-400'>team</li>
                     </Link>
-                    <Link to='/contact_us' className={window.location.pathname === '/contact_us' ? "!underline" : ""}>
+                    <Link to='/contact_us' className={window.location.pathname === '/faq' ? "!underline" : ""}>
                         <li className='hover:text-green-400'>contact us</li>
                     </Link>
                     <Link to='/blog' className={window.location.pathname === '/blog' ? "!underline" : ""}>
@@ -28,18 +28,30 @@ const ContactUs = () => {
                     </Link>
                 </p>
             </div>
-
-            <div className='flex justify-center gap-44 mt-20'>
-                <div className='flex flex-col gap-5 cursor-pointer'>
-                    <p className='text-4xl font-bold font-serif'>Let’s get in touch!</p>
-                    <p className=''>If you have any questions, suggestions, or feedback about e-gree, please feel free to contact us.</p>
-                    <p className=''>By email: parwejalam394@gmail.com</p>
-                </div>
-                <div>
-                    <img src={contact} alt="" className='h-80 mr-20' />
-                </div>
-
+            <div>
+                <img src={venue} alt="" className='w-full h-96' />
             </div>
+
+            <div className='flex gap-10 mt-5'>
+                <div className='w-[50%] ml-24'>
+                    <p className='text-7xl font-bold font-serif'>Venue</p>
+                    <p className='text-xl pt-4'>e-gree’s event and venue entry system is for any business that welcomes
+                        members of the public onto its premises. Whether you operate a large sports arena, shopping mall, nightclub,
+                        restaurant or local retail store, e-gree’s event and venue services provides a quick and convenient way for you to
+                        ensure that all of your guests accept and acknowledge your venue’s rules, regulations, and other terms of service prior
+                        to their entry. Upon registration of your venue with e-gree, we will create a
+                        specific QR Code that each of your patrons will use to gain entry to your event.</p>
+                </div>
+                <div className='w-[50%] mt-5 pl-10 text-center items-center justify-center'>
+                    <img src={'https://e-gree.app/wp-content/themes/eGree/images/icon-venue.svg'} alt="" className='pl-64 h-44' />
+                    <button className='border bg-blue-400 text-2xl text-white h-12 rounded-3xl w-72 mt-5'>Create contact</button>
+                    <header className='flex flex-col mt-5'>
+                        <span>2072 venue contracts have</span>
+                        <span>already signed</span>
+                    </header>
+                </div>
+            </div>
+
 
             <div className='flex justify-evenly items-center mt-10'>
                 <footer>
@@ -74,15 +86,17 @@ const ContactUs = () => {
                         <img src={'https://img.freepik.com/premium-vector/square-linkedin-logo-isolated-white-background_469489-892.jpg?size=338&ext=jpg&ga=GA1.1.632798143.1705536000&semt=ais'} alt="" className='h-10' />
                     </footer>
                     <footer>
-                        <img src={pppp} alt="" className='h-44' />
+                        <img src={pppp} alt="" className='h-48' />
                     </footer>
                 </div>
                 <footer>
                     <p>© 2020–2022 e-gree</p>
                 </footer>
             </div>
-        </>
+
+
+        </div>
     )
 }
 
-export default ContactUs
+export default Venue

@@ -1,13 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import contact from '../../image/contactus.png'
-import fffffff from '../../image/ffffff.png'
-import apps from '../../image/app.png'
-import pppp from '../../image/pppp.png'
+import freelance from '../../../image/Freelance-700x320-1.png'
+import pppp from '../../../image/pppp.png'
+import fffffff from '../../../image/ffffff.png'
+import apps from '../../../image/app.png'
 
-const ContactUs = () => {
+
+
+const Freelance = () => {
     return (
-        <>
+        <div>
             <div className='mx-28 mt-2'>
                 <p className='text-6xl font-extrabold text-emerald-500 font-serif cursor-pointer'>e.gree</p>
                 <p className='flex list-none gap-7 text-l capitalize mt-2 cursor-pointer'>
@@ -17,10 +19,10 @@ const ContactUs = () => {
                     <Link to='/faq' className={window.location.pathname === '/faq' ? "!underline" : ""}>
                         <li className='hover:text-green-400'>FAQ</li>
                     </Link>
-                    <Link to='/team' className={window.location.pathname === '/team' ? "!underline" : ""}>
+                    <Link to='/team' className={window.location.pathname === '/faq' ? "!underline" : ""}>
                         <li className='hover:text-green-400'>team</li>
                     </Link>
-                    <Link to='/contact_us' className={window.location.pathname === '/contact_us' ? "!underline" : ""}>
+                    <Link to='/contact_us' className={window.location.pathname === '/faq' ? "!underline" : ""}>
                         <li className='hover:text-green-400'>contact us</li>
                     </Link>
                     <Link to='/blog' className={window.location.pathname === '/blog' ? "!underline" : ""}>
@@ -28,17 +30,27 @@ const ContactUs = () => {
                     </Link>
                 </p>
             </div>
-
-            <div className='flex justify-center gap-44 mt-20'>
-                <div className='flex flex-col gap-5 cursor-pointer'>
-                    <p className='text-4xl font-bold font-serif'>Let’s get in touch!</p>
-                    <p className=''>If you have any questions, suggestions, or feedback about e-gree, please feel free to contact us.</p>
-                    <p className=''>By email: parwejalam394@gmail.com</p>
+            <div>
+                <img src={freelance} alt="" className='w-full h-96' />
+            </div>
+            <div className='flex gap-10 mt-5'>
+                <div className='w-[50%] ml-24'>
+                    <p className='text-7xl font-bold font-serif'> Freelance</p>
+                    <p className='text-xl pt-4'>If you provide creative contributions or other services on a project or short-term basis – or
+                        if you hire such contributors – then use this e-greement to secure your rights. This e-greement is designed for
+                        a wide variety of projects and work-for-hire situations and contains the necessary elements to ensure that you will
+                        be paid for your work and that the rights to your work and the scope of its use will be properly assigned. So, whether it’s Blog
+                        Posts, Freelance Writing, Editorial Contributions, Content Creation,
+                        or consulting services, whenever and wherever you work for hire, this e-greement works with you.</p>
                 </div>
-                <div>
-                    <img src={contact} alt="" className='h-80 mr-20' />
+                <div className='w-[50%] mt-5 pl-10 text-center items-center justify-center'>
+                    <img src={'https://e-gree.app/wp-content/themes/eGree/images/icon-freelance.svg'} alt="" className='pl-64 h-40' />
+                    <button className='border bg-blue-400 text-2xl text-white h-12 rounded-3xl w-72 mt-5'>Create contact</button>
+                    <header className='flex flex-col mt-5'>
+                        <span>2601 freelance contracts</span>
+                        <span>have already signed</span>
+                    </header>
                 </div>
-
             </div>
 
             <div className='flex justify-evenly items-center mt-10'>
@@ -74,15 +86,16 @@ const ContactUs = () => {
                         <img src={'https://img.freepik.com/premium-vector/square-linkedin-logo-isolated-white-background_469489-892.jpg?size=338&ext=jpg&ga=GA1.1.632798143.1705536000&semt=ais'} alt="" className='h-10' />
                     </footer>
                     <footer>
-                        <img src={pppp} alt="" className='h-44' />
+                        <img src={pppp} alt="" className='h-48' />
                     </footer>
                 </div>
                 <footer>
                     <p>© 2020–2022 e-gree</p>
                 </footer>
             </div>
-        </>
+
+        </div>
     )
 }
 
-export default ContactUs
+export default Freelance

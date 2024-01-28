@@ -37,7 +37,9 @@ function Contracts() {
                         <img src={handyman} alt="" className='h-40 w-96 rounded-md' />
                         <footer className='flex items-center pl-5'>
                             <img src={'https://e-gree.app/wp-content/uploads/2021/12/Handyman-150x150.png'} alt="" className='h-8' />
-                            <p className='capitalize text-xl font-bold font-serif hover:text-emerald-400 cursor-pointer'>handyman</p>
+                            <Link to='/handyman'>
+                                <p className='capitalize text-xl font-bold font-serif hover:text-emerald-400 cursor-pointer'>handyman</p>
+                            </Link>
                         </footer>
                         <p className='pl-5 capitalize cursor-pointer'>for household projects large and small</p>
                         <footer className='flex gap-10 mt-[2rem] pl-5'>
@@ -409,7 +411,7 @@ function Contracts() {
                 <p className='font-serif font-bold'>to e-gree</p>
             </div>
 
-            <div className='flex justify-evenly items-center h-80'>
+            <div className='flex justify-evenly items-center h-80 bg-slate-100'>
                 <footer>
                     <p className='text-slate-400 text-xl'>Terms and Conditions</p>
                     <p className='text-slate-400 text-xl'>Our Team</p>
