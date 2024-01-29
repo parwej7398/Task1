@@ -62,7 +62,9 @@ const Head = () => {
             <div className='flex justify-center items-center gap-20 mt-8 h-[34rem]' style={{ backgroundImage: `url('https://wallpapercave.com/wp/wp2987144.jpg')` }}>
                 <div>
                     <p className='h-1 w-[30rem] font-serif text-4xl capitalize text-white font-bold  mr-28 italic'>helping you through all of life's agreements <span className='flex flex-col text-green-200'>and disagreements</span></p>
-                    <img src={apps} alt="" className='rounded-md mt-32 h-12' />
+                    <Link to="https://apps.apple.com/us/app/e-gree-contracts-documents/id1517425693?shortlink=fc7688c4&c=MainPage_context&pid=MainPage_context&source_caller=ui">
+                        <img src={apps} alt="" className='rounded-md mt-32 h-12' />
+                    </Link>
                 </div>
                 <div className='flex'>
                     <img src={images} alt="" className='rounded-3xl bg-green-600 h-96 w-48' />
@@ -237,7 +239,7 @@ const Head = () => {
 
             <p className='ml-44 text-2xl font-bold font-serif mt-5'>All you need is life</p>
 
-            <div className='flex ml-44 gap-[30rem] items-center'>
+            <div className='flex ml-44 gap-[20rem] items-center'>
                 <div className='flex flex-col gap-6'>
                     <footer className='flex gap-10 text-xl font-bold'>
                         <div className='flex items-center'>
@@ -293,7 +295,9 @@ const Head = () => {
                 <p className='font-bold text-4xl capitalize text-white font-serif'>sign an agreement</p>
                 <p className='font-bold text-4xl text-white font-serif'>in e-gree-save tree!</p>
                 <p className='w-[25rem] text-white mt-5'>At e-gree we're doing our part by bringing legal services to the digital world. with our contract trmplates, we're saving time and money. and trees, of course</p>
-                <button className='items-center border bg-emerald-600 h-12 mt-5 rounded-lg hover:bg-emerald-500 text-white text-xl w-52'>Sign now</button>
+                <Link to="https://apps.apple.com/us/app/e-gree-contracts-documents/id1517425693?shortlink=fc7688c4&c=MainPage_context&pid=MainPage_context&source_caller=ui">
+                    <button className='items-center border bg-emerald-600 h-12 mt-5 rounded-2xl hover:bg-emerald-500 text-white text-xl w-64'>Sign now</button>
+                </Link>
             </div>
 
             <p className='ml-20 text-2xl font-bold font-serif mt-7'>Meanwhile in our blog</p>
@@ -402,7 +406,9 @@ const Head = () => {
                 <footer>
                     <p className='font-bold font-serif text-4xl'>Now and forever</p>
                     <p className='w-[21rem] mt-2 font-serif'>Frist 3 created contracts are <span className='text-emerald-500'>free</span> and you can use it <span className='text-emerald-500'>forever</span>. All incoming contracts are always free</p>
-                    <img src={apps} alt="" className='rounded-md mt-10 h-12' />
+                    <Link to="https://apps.apple.com/us/app/e-gree-contracts-documents/id1517425693?shortlink=fc7688c4&c=MainPage_context&pid=MainPage_context&source_caller=ui">
+                        <img src={apps} alt="" className='rounded-md mt-10 h-12' />
+                    </Link>
                 </footer>
             </div>
 
