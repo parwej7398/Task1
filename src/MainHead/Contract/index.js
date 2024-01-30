@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import handyman from '../../image/Handyman_700х320.png'
+import handyman from '../../image/Handyman.png'
 import fffffff from '../../image/ffffff.png'
 import apps from '../../image/app.png'
 import ppppp from '../../image/pppp.png'
@@ -53,8 +53,7 @@ function Contracts() {
                         <img src={'https://e-gree.app/wp-content/uploads/2021/10/Refer-700x320-1.png'} alt="" className='h-40 w-96 rounded-md' />
                         <footer className='flex items-center pl-5'>
                             <img src={'https://e-gree.app/wp-content/themes/eGree/images/icon-refer.svg'} alt="" className='h-8' />
-                            <p className='capitalize text-xl font-bold font-serif hover:text-emerald-400 cursor-pointer'>
-                                Refer</p>
+                            <p className='capitalize text-xl font-bold font-serif hover:text-emerald-400 cursor-pointer'> Refer</p>
                         </footer>
                         <p className='pl-5 capitalize cursor-pointer'>for household projects large and small</p>
                         <footer className='flex gap-10 mt-[2rem] pl-5'>

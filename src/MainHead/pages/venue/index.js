@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import pppp from '../../../image/pppp.png'
 import fffffff from '../../../image/ffffff.png'
 import apps from '../../../image/app.png'
-import venue from '../../../image/Venue-700x320-1.png'
+import venue from '../../../image/Venue.png'
 
 const Venue = () => {
     return (
@@ -44,7 +44,9 @@ const Venue = () => {
                 </div>
                 <div className='w-[50%] mt-5 pl-10 text-center items-center justify-center'>
                     <img src={'https://e-gree.app/wp-content/themes/eGree/images/icon-venue.svg'} alt="" className='pl-64 h-44' />
-                    <button className='border bg-blue-400 text-2xl text-white h-12 rounded-3xl w-72 mt-5'>Create contact</button>
+                    <Link to='https://apps.apple.com/us/app/e-gree-contracts-documents/id1517425693?shortlink=fc7688c4&c=MainPage_context&pid=MainPage_context&source_caller=ui'>
+                        <button className='border bg-blue-400 text-2xl text-white h-12 rounded-3xl w-72 mt-5'>Create contact</button>
+                    </Link>
                     <header className='flex flex-col mt-5'>
                         <span>2072 venue contracts have</span>
                         <span>already signed</span>

@@ -38,7 +38,7 @@ const Team = () => {
 
 
 
-            <div className="mx-[250px]">
+            <div className="mx-28">
                 <div className="flex flex-col">
                     <p className="text-3xl italic mt-9">The e-gree team</p>
                     <div className="flex mt-10">

@@ -3,24 +3,24 @@ import apps from '../../image/app.png'
 import images from '../../image/Screenshot 2024-01-22 173940.png'
 import ssss from '../../image/ssss.png'
 import ffff from '../../image/legal-image.svg'
-import vanue from '../../image/Venue-700x320-1.png'
-import freelance from '../../image/Freelance-700x320-1.png'
+import vanue from '../../image/Venue.png'
+import freelance from '../../image/Freelance.png'
 import imagess from '../../image/imagess.png'
 import fffffff from '../../image/ffffff.png'
 import pppp from '../../image/pppp.png'
 import { Rating } from '@mui/material'
 import { Link } from 'react-router-dom'
-import handyman from '../../image/Handyman_700х320.png'
-import promise from '../../image/Promise_1920х420-700x320.png'
-import date from '../../image/Date-700x320-1.png'
-import rental from '../../image/Date-700x320-1.png'
-import purchase from '../../image/Purchase-and-Sale-700x320-1.png'
-import uncouple from '../../image/Uncouple-700x320-1.png'
-import prenup from '../../image/Prenup-700x320-1.png'
-import mwanwhile from '../../image/1086х496-5-1080x494.png'
-import onlineshoping from '../../image/Обложка-1920х420-2-700x320.png'
+import handyman from '../../image/Handyman.png'
+import promise from '../../image/promiseed.png'
+import date from '../../image/date.png'
+import rental from '../../image/date.png'
+import purchase from '../../image/Purchase-and-Sale.png'
+import uncouple from '../../image/Uncouple.png'
+import prenup from '../../image/Prenup.png'
+import mwanwhile from '../../image/manwheel.png'
+import onlineshoping from '../../image/shoping.png'
 import womanlaptop from '../../image/ggg.png'
-import lighting from '../../image/700-х-320-4-768x352.png'
+import lighting from '../../image/promiseed.png'
 import usdess from '../../image/aa.png'
 import Allowance from '../.././assest/Allowance.png'
 import Consent from '../../assest/Consent.png'
@@ -152,7 +152,7 @@ const Head = () => {
                     </div>
                 </Link>
 
-                <Link>
+                <Link to='/rental'>
                     <div className='border h-auto rounded-md w-80'>
                         <img src={rental} alt="" className='h-40 w-80 rounded-md' />
                         <footer className='flex items-center pl-5'>
@@ -167,7 +167,7 @@ const Head = () => {
                     </div>
                 </Link>
 
-                <Link>
+                <Link to='/purchase'>
                     <div className='border h-auto rounded-md w-80'>
                         <img src={purchase} alt="" className='h-40 w-80 rounded-md' />
                         <footer className='flex items-center pl-5'>
@@ -188,7 +188,7 @@ const Head = () => {
 
 
             <div className='flex justify-center gap-20 items-center mt-5'>
-                <Link>
+                <Link to='/date'>
                     <div className='border h-auto rounded-md w-80'>
                         <img src={date} alt="" className='h-40 w-80 rounded-md' />
                         <footer className='flex items-center pl-5'>
@@ -204,7 +204,7 @@ const Head = () => {
                 </Link>
 
 
-                <Link>
+                <Link to='/uncouple'>
                     <div className='border h-auto rounded-md w-80'>
                         <img src={uncouple} alt="" className='h-40 w-80 rounded-md' />
                         <footer className='flex items-center pl-5'>
@@ -220,7 +220,7 @@ const Head = () => {
                 </Link>
 
 
-                <Link>
+                <Link to='/prenup'>
                     <div className='border h-auto rounded-md w-80'>
                         <img src={prenup} alt="" className='h-40 w-80 rounded-md' />
                         <footer className='flex items-center pl-5'>

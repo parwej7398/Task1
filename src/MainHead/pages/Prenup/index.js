@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import handyman from '../../../image/Handyman.png'
+import prenup from '../../../image/Prenup.png'
 import pppp from '../../../image/pppp.png'
 import apps from '../../../image/app.png'
 import fffffff from '../../../image/ffffff.png'
 
-const Handyman = () => {
+const Prenup = () => {
     return (
         <div>
             <div className='mx-28 mt-2'>
@@ -17,10 +17,10 @@ const Handyman = () => {
                     <Link to='/faq' className={window.location.pathname === '/faq' ? "!underline" : ""}>
                         <li className='hover:text-green-400'>FAQ</li>
                     </Link>
-                    <Link to='/team' className={window.location.pathname === '/team' ? "!underline" : ""}>
+                    <Link to='/team' className={window.location.pathname === '/faq' ? "!underline" : ""}>
                         <li className='hover:text-green-400'>team</li>
                     </Link>
-                    <Link to='/contact_us' className={window.location.pathname === '/contact_us' ? "!underline" : ""}>
+                    <Link to='/contact_us' className={window.location.pathname === '/faq' ? "!underline" : ""}>
                         <li className='hover:text-green-400'>contact us</li>
                     </Link>
                     <Link to='/blog' className={window.location.pathname === '/blog' ? "!underline" : ""}>
@@ -29,21 +29,22 @@ const Handyman = () => {
                 </p>
             </div>
             <div>
-                <img src={handyman} alt="" className='w-full h-[30rem] mt-5' />
+                <img src={prenup} alt="" className='w-full h-[30rem] mt-5' />
             </div>
             <div className='flex gap-10 mt-5'>
                 <div className='w-[50%] ml-24'>
-                    <p className='text-7xl font-bold font-serif'> Handyman</p>
-                    <p className='text-xl pt-4'>Maintaining your home or apartment seems like a never-ending task. There are any number of systems- plumbing, electrical, paint, landscaping, HVAC – that from time to time require the skills of a craftsman, contractor, or specialist to fix or to otherwise keep in ship-shape. When you hire such a person, you will often trust the online reviews, the recommendations of friends and your instincts to ensure the right person for the job. And now you can trust e-gree and this household services e-greement to ensure your legal rights are protected and that all parties are on the same page regarding the work to be done and the price to be paid. So, for those jobs where you have selected a contractor, handyman, or laborer-or if you are such a specialist- this is the e-greement to use. </p>
+                    <p className='text-7xl font-bold font-serif'>
+                        Prenup</p>
+                    <p className='text-xl pt-4'>This Prenuptial e-greement is for couples contemplating marriage who wish to have some assurances in place before their big day. The e-greement can be used to identify and define each person’s separate property and shared marital property, as well as determine how property will be distributed in the event of divorce or separation. It can also establish any ongoing financial obligations to the other in the form of spousal support, child custody or child support.</p>
                 </div>
                 <div className='w-[50%] mt-5 pl-10 text-center items-center justify-center'>
-                    <img src={'https://e-gree.app/wp-content/uploads/2021/12/Handyman-150x150.png'} alt="" className='pl-64' />
+                    <img src={'https://e-gree.app/wp-content/themes/eGree/images/icon-prenup.svg'} alt="" className='pl-64' />
                     <Link to='https://apps.apple.com/us/app/e-gree-contracts-documents/id1517425693?shortlink=fc7688c4&c=MainPage_context&pid=MainPage_context&source_caller=ui'>
-                        <button className='border bg-blue-400 text-2xl text-white h-12 rounded-3xl w-72 mt-5'>Create contact</button>
+                        <button className='border bg-blue-400 text-2xl text-white h-12 rounded-3xl w-72 mt-5'>Create contact</button>=
                     </Link>
                     <header className='flex flex-col mt-5'>
-                        <span>754 handyman contracts</span>
-                        <span>have already signed</span>
+                        <span>123 prenup contracts have</span>
+                        <span>already signed</span>
                     </header>
                 </div>
             </div>
@@ -93,4 +94,4 @@ const Handyman = () => {
     )
 }
 
-export default Handyman
+export default Prenup

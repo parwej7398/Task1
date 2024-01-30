@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import freelance from '../../../image/Freelance-700x320-1.png'
+import freelance from '../../../image/Freelance.png'
 import pppp from '../../../image/pppp.png'
 import fffffff from '../../../image/ffffff.png'
 import apps from '../../../image/app.png'
